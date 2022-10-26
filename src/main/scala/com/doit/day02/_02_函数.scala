@@ -24,6 +24,7 @@ object _02_函数 {
     //用java 来写一个函数   需求：传进去一个Int类型的字符串，在传进去一个Int 类型的值，返回 他们俩的和(转换成字符串)  "1" 2  1+2 "3"
     //传进去的参数   String Int   String
 
+
     //把这个类型给补充出来
     val fun2 = (str:String,a:Int)=>{
       (str.toInt+a).toString
