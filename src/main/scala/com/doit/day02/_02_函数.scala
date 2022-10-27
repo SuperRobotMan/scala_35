@@ -1,7 +1,12 @@
 package com.doit.day02
 
+import test.Person
+
 /**
  * 和方法一样，他们的作用都是一段代码逻辑的封装，方便后续调用，复用
+ *
+ *
+ * 函数的类型：Function几(由你传进去的参数决定的)
  */
 object _02_函数 {
   def main(args: Array[String]): Unit = {
@@ -25,10 +30,19 @@ object _02_函数 {
     //传进去的参数   String Int   String
 
 
-    //把这个类型给补充出来
-    val fun2 = (str:String,a:Int)=>{
+    //把这个类型给补充出来  Function2[String,Int,String]  scala底层的java写法
+    //            (String,Int)=>String  语法糖写法
+    val fun2:(String,Int)=>String = (str:String,a:Int)=>{
       (str.toInt+a).toString
     }
+
+    //test的类型补充出来   Function3[Person,Int,String,Unit] 这个类型有点牛，是我scala底层的类型
+    //                            (Person, Int, String) => Unit
+    //                             ()=>{}
+    //我把这个类型给你封装过，语法糖类型
+/*    val test:(Person, Int, String) => Unit  = (p1:Person, a:Int, name:String)=>{
+      println(s"${name} ,你好，你认识一个叫${p1.getName} 嘛？他的年龄现在是多少啊？")
+    }*/
 
 
 
