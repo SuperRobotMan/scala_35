@@ -31,19 +31,13 @@ object _04_面向对象 {
 //如果你加了val 或者var 那他就是一个成员变量
 //带参构造里面是否需要传这个参数的问题
 class Dog(val id:Int,var name:String,var age:Int,var color:String){
-
   //这玩意儿也是一个成员变量
   var dogType:String = "金毛"
-
   //这玩意儿是一个成员变量不？？  是：函数本身是一个类，或者说是一个对象
   val myMaster = (master:String)=>{println(s"我的主人是:$master")}
-
-
 
   def sayWong()={
     println(s"$name 开始咬人了，叫了两声！！！！")
   }
-
-
 }
 

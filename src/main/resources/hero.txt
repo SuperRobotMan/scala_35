@@ -1,0 +1,5 @@
+1_hanbing,100:95
+2_manzi,150:10
+3_nvqiang,110:98
+4_timo,90:80
+5_baozouluoli,120:60

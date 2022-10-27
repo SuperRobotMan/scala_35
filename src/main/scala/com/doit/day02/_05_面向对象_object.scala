@@ -38,9 +38,9 @@ object _05_面向对象_object {
 
 /**
  * 这个类有一些特殊的东西，没有构造函数
+ * 它里面的东西都是静态的
  */
 object Cat{
-
   //成员变量
   val id:Int = 1
   var name:String = _
